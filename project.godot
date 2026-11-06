@@ -33,6 +33,10 @@ window/stretch/mode="canvas_items"
 
 enabled=PackedStringArray()
 
+[gui]
+
+theme/custom_font="uid://b7gpuvoxoa0ic"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
