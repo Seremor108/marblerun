@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Sketchpad"
-config/description="A computational sketchpad made in Godot.
+config/name="Marble Run"
+config/description="A digital marble run made in Godot.
 All emojis designed by OpenMoji (openmoji.org) – the open-source emoji and icon project. License: CC BY-SA 4.0"
 run/main_scene="uid://005d0dsgnffv"
 config/disable_project_settings_override=true
