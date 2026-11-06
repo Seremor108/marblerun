@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://005d0dsgnffv"]
 
+[ext_resource type="PackedScene" uid="uid://dkq6shde132ac" path="res://assets/courses/test/test_course.tscn" id="1_ig7tw"]
+
 [node name="Main" type="Node" unique_id=516748547]
+
+[node name="Test" parent="." unique_id=162721865 instance=ExtResource("1_ig7tw")]

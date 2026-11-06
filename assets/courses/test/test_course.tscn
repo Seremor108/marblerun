@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dkq6shde132ac"]
+
+[ext_resource type="PackedScene" uid="uid://dl6vodfa8jvy3" path="res://assets/sequences/marble_box.tscn" id="1_wr02y"]
+
+[node name="Test" type="Node2D" unique_id=162721865]
+
+[node name="MarbleBox" parent="." unique_id=1336995911 instance=ExtResource("1_wr02y")]
+position = Vector2(160, 160)

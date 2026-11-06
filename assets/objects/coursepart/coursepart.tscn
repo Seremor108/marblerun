@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://crqucghakjjwj"]
+
+[ext_resource type="PhysicsMaterial" uid="uid://b3pg4avrj4bel" path="res://assets/objects/common/solid_physics_material.tres" id="1_lctns"]
+[ext_resource type="Texture2D" uid="uid://c82vvs4yf5v7k" path="res://assets/objects/common/white_gradient_texture_1d.tres" id="2_d2wnv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(1, 1)
+
+[node name="Course" type="StaticBody2D" unique_id=1495529957]
+physics_material_override = ExtResource("1_lctns")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1795897575]
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("2_d2wnv")
+
+[node name="Collision" type="CollisionShape2D" parent="." unique_id=492409537]
+shape = SubResource("RectangleShape2D_g4v7s")

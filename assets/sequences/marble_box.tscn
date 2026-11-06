@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://dl6vodfa8jvy3"]
+
+[ext_resource type="PackedScene" uid="uid://c1d3ia0ju1yj4" path="res://assets/objects/marble/marble.tscn" id="1_r1kf3"]
+[ext_resource type="PackedScene" uid="uid://77menssyvicf" path="res://assets/objects/container/container.tscn" id="2_m78il"]
+
+[node name="MarbleBox" type="Node2D" unique_id=1336995911]
+
+[node name="Marble1" parent="." unique_id=1480184691 instance=ExtResource("1_r1kf3")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-48, -48)
+
+[node name="Marble2" parent="." unique_id=1753100493 instance=ExtResource("1_r1kf3")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(-24, -48)
+
+[node name="Marble3" parent="." unique_id=1375963730 instance=ExtResource("1_r1kf3")]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(24, -48)
+
+[node name="Marble4" parent="." unique_id=705556169 instance=ExtResource("1_r1kf3")]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(48, -48)
+
+[node name="Marble5" parent="." unique_id=1021503962 instance=ExtResource("1_r1kf3")]
+modulate = Color(1, 0.49803922, 0, 1)
+position = Vector2(-48, 48)
+
+[node name="Marble6" parent="." unique_id=787890846 instance=ExtResource("1_r1kf3")]
+modulate = Color(1, 0, 1, 1)
+position = Vector2(-24, 48)
+
+[node name="Marble7" parent="." unique_id=1414716308 instance=ExtResource("1_r1kf3")]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(24, 48)
+
+[node name="Marble8" parent="." unique_id=698166866 instance=ExtResource("1_r1kf3")]
+modulate = Color(0.49803922, 0, 1, 1)
+position = Vector2(48, 48)
+
+[node name="Container" parent="." unique_id=1686289325 instance=ExtResource("2_m78il")]

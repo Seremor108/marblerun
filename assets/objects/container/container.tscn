@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://77menssyvicf"]
+
+[ext_resource type="Texture2D" uid="uid://c82vvs4yf5v7k" path="res://assets/objects/common/white_gradient_texture_1d.tres" id="1_kysso"]
+
+[sub_resource type="GDScript" id="GDScript_g4v7s"]
+resource_name = "container"
+script/source = "extends StaticBody2D
+
+@export var rotate_speed = 2
+	
+func _physics_process(delta: float) -> void:
+	rotation += rotate_speed * delta
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kysso"]
+size = Vector2(15, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ws22c"]
+size = Vector2(15, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fhnk6"]
+size = Vector2(15, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rc7ky"]
+size = Vector2(15, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yf5fn"]
+size = Vector2(150, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_57qmd"]
+size = Vector2(10, 150)
+
+[node name="Container" type="StaticBody2D" unique_id=1686289325]
+script = SubResource("GDScript_g4v7s")
+
+[node name="Spinner1" type="CollisionShape2D" parent="." unique_id=606396800]
+position = Vector2(0, 58)
+rotation = 0.7853982
+shape = SubResource("RectangleShape2D_kysso")
+
+[node name="Sprite" type="Sprite2D" parent="Spinner1" unique_id=1155236361]
+position = Vector2(0, 4.7683716e-07)
+scale = Vector2(15, 15)
+texture = ExtResource("1_kysso")
+
+[node name="Spinner2" type="CollisionShape2D" parent="." unique_id=239612702]
+position = Vector2(0, -57)
+rotation = 0.7853982
+shape = SubResource("RectangleShape2D_ws22c")
+
+[node name="Sprite" type="Sprite2D" parent="Spinner2" unique_id=1028615905]
+position = Vector2(-1.9073486e-06, 4.7683716e-07)
+scale = Vector2(15, 15)
+texture = ExtResource("1_kysso")
+
+[node name="Spinner3" type="CollisionShape2D" parent="." unique_id=456302726]
+position = Vector2(-58, 0)
+rotation = 0.7853982
+shape = SubResource("RectangleShape2D_fhnk6")
+
+[node name="Sprite" type="Sprite2D" parent="Spinner3" unique_id=1531967413]
+scale = Vector2(15, 15)
+texture = ExtResource("1_kysso")
+
+[node name="Spinner4" type="CollisionShape2D" parent="." unique_id=183554615]
+position = Vector2(58, 0)
+rotation = 0.7853982
+shape = SubResource("RectangleShape2D_rc7ky")
+
+[node name="Sprite" type="Sprite2D" parent="Spinner4" unique_id=338909198]
+scale = Vector2(15, 15)
+texture = ExtResource("1_kysso")
+
+[node name="CollisionN" type="CollisionShape2D" parent="." unique_id=937859325]
+position = Vector2(0, -70)
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite" type="Sprite2D" parent="CollisionN" unique_id=549972850]
+position = Vector2(0, 4.7683716e-07)
+scale = Vector2(150, 10.000001)
+texture = ExtResource("1_kysso")
+
+[node name="CollisionW" type="CollisionShape2D" parent="." unique_id=1913486354]
+position = Vector2(-70, 0)
+shape = SubResource("RectangleShape2D_57qmd")
+
+[node name="Sprite" type="Sprite2D" parent="CollisionW" unique_id=983486436]
+position = Vector2(-4.7683716e-07, 0)
+scale = Vector2(10.000001, 150)
+texture = ExtResource("1_kysso")
+
+[node name="CollisionS" type="CollisionShape2D" parent="." unique_id=843810701]
+position = Vector2(0, 70)
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite" type="Sprite2D" parent="CollisionS" unique_id=984654399]
+position = Vector2(0, 4.7683716e-07)
+scale = Vector2(150, 10.000001)
+texture = ExtResource("1_kysso")
+
+[node name="CollisionE" type="CollisionShape2D" parent="." unique_id=1641727396]
+position = Vector2(70, 0)
+shape = SubResource("RectangleShape2D_57qmd")
+
+[node name="Sprite" type="Sprite2D" parent="CollisionE" unique_id=80470179]
+position = Vector2(4.7683716e-07, 0)
+scale = Vector2(10.000001, 150)
+texture = ExtResource("1_kysso")
