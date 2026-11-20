@@ -7,6 +7,7 @@
 resource_name = "marble_box"
 script/source = "extends Node2D
 
+var dissolved = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -24,9 +25,9 @@ func _input(event: InputEvent) -> void:
 			DissolveWalls()
 
 func DissolveWalls() -> void:
-	if $Container == null: return
+	if dissolved: return
 	$Container.queue_free()
-	print(\"START!!!\")
+	dissolved = true
 "
 
 [node name="MarbleBox" type="Node2D" unique_id=1336995911]
