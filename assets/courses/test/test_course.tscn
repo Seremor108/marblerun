@@ -1,8 +1,85 @@
 [gd_scene format=3 uid="uid://dkq6shde132ac"]
 
 [ext_resource type="PackedScene" uid="uid://dl6vodfa8jvy3" path="res://assets/sequences/marble_box.tscn" id="1_wr02y"]
+[ext_resource type="PackedScene" uid="uid://bj4agiy44mkju" path="res://assets/objects/coursepart/coursepart_long.tscn" id="2_rcl43"]
+[ext_resource type="PackedScene" uid="uid://crqucghakjjwj" path="res://assets/objects/coursepart/coursepart.tscn" id="3_18yfi"]
 
 [node name="Test" type="Node2D" unique_id=162721865]
 
 [node name="MarbleBox" parent="." unique_id=1336995911 instance=ExtResource("1_wr02y")]
 position = Vector2(160, 160)
+
+[node name="Course" parent="." unique_id=1495529957 instance=ExtResource("2_rcl43")]
+position = Vector2(596.99994, 328)
+rotation = 0.0770217
+scale = Vector2(115.55079, 19.201828)
+skew = 0.052169442
+
+[node name="Course2" parent="." unique_id=1346988994 instance=ExtResource("2_rcl43")]
+position = Vector2(800.99994, 462.00003)
+rotation = -0.050777186
+scale = Vector2(115.55079, 19.201828)
+skew = 0.052169442
+
+[node name="Course3" parent="." unique_id=50603792 instance=ExtResource("2_rcl43")]
+position = Vector2(589, 616)
+rotation = 0.096874565
+scale = Vector2(115.55079, 19.201828)
+skew = 0.052169442
+
+[node name="Course4" parent="." unique_id=455375839 instance=ExtResource("2_rcl43")]
+position = Vector2(1019, 609.00006)
+rotation = 0.105644934
+scale = Vector2(25.573347, 18.997507)
+skew = -0.42227638
+
+[node name="Course5" parent="." unique_id=730136624 instance=ExtResource("2_rcl43")]
+position = Vector2(1148.9999, 647.0001)
+rotation = 1.169574
+scale = Vector2(5.756712, 18.091854)
+skew = -0.5529597
+
+[node name="Course6" parent="." unique_id=1700099644 instance=ExtResource("3_18yfi")]
+position = Vector2(30.000015, 552.00006)
+rotation = -0.55924237
+scale = Vector2(11.213354, 7.013082)
+
+[node name="Course7" parent="." unique_id=623779931 instance=ExtResource("3_18yfi")]
+position = Vector2(49, 554.00006)
+rotation = -0.55924237
+scale = Vector2(11.213354, 7.013082)
+
+[node name="Course8" parent="." unique_id=1137604428 instance=ExtResource("3_18yfi")]
+position = Vector2(75.999985, 558)
+rotation = -0.55924237
+scale = Vector2(11.213354, 7.013082)
+
+[node name="Course9" parent="." unique_id=804331825 instance=ExtResource("3_18yfi")]
+position = Vector2(105.000046, 561.00006)
+rotation = -0.55924237
+scale = Vector2(11.213354, 7.013082)
+
+[node name="Course10" parent="." unique_id=376359448 instance=ExtResource("3_18yfi")]
+position = Vector2(140.00003, 564.00006)
+rotation = -0.55924237
+scale = Vector2(11.213354, 7.013082)
+
+[node name="Course11" parent="." unique_id=1740318227 instance=ExtResource("3_18yfi")]
+position = Vector2(180, 568.00006)
+rotation = -0.55924237
+scale = Vector2(11.213354, 7.013082)
+
+[node name="Course12" parent="." unique_id=1494527571 instance=ExtResource("3_18yfi")]
+position = Vector2(207.00003, 570.00006)
+rotation = -0.55924237
+scale = Vector2(11.213354, 7.013082)
+
+[node name="Course13" parent="." unique_id=1149659631 instance=ExtResource("3_18yfi")]
+position = Vector2(214.99998, 565)
+rotation = -0.55924237
+scale = Vector2(11.213354, 7.013082)
+
+[node name="Course14" parent="." unique_id=1920280229 instance=ExtResource("3_18yfi")]
+position = Vector2(274, 576)
+rotation = -0.55924237
+scale = Vector2(11.213354, 7.013082)
