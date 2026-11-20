@@ -3,7 +3,34 @@
 [ext_resource type="PackedScene" uid="uid://c1d3ia0ju1yj4" path="res://assets/objects/marble/marble.tscn" id="1_r1kf3"]
 [ext_resource type="PackedScene" uid="uid://77menssyvicf" path="res://assets/objects/container/container.tscn" id="2_m78il"]
 
+[sub_resource type="GDScript" id="GDScript_buysq"]
+resource_name = "marble_box"
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+func _input(event: InputEvent) -> void:
+	if event is InputEventMouseButton:
+		var mouseEvent = event as InputEventMouseButton
+		if mouseEvent.button_index == 1:
+			DissolveWalls()
+
+func DissolveWalls() -> void:
+	if $Container == null: return
+	$Container.queue_free()
+	print(\"START!!!\")
+"
+
 [node name="MarbleBox" type="Node2D" unique_id=1336995911]
+script = SubResource("GDScript_buysq")
 
 [node name="Marble1" parent="." unique_id=1480184691 instance=ExtResource("1_r1kf3")]
 modulate = Color(1, 0, 0, 1)
